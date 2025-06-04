@@ -1,0 +1,16 @@
+.arap {
+  display: flex;
+  height: 4rem; /* Fixed height */
+  width: 100%; /* Full width of the screen */
+  background-image: linear-gradient(141deg, #361c30 0.36%, #f2e8e8 100%);
+  justify-content: center; /* Horizontally center the items */
+  align-items: center; /* Vertically center the items */
+  padding-top: 0.3rem ; /* Optional: adds some space around the content */
+  padding-top: 0.3rem ;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.p{
+    font-size: 14px;
+    font-weight: bold;
+}

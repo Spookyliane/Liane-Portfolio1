@@ -1,0 +1,71 @@
+.services{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.services-title{
+    margin-right: 20%;
+    margin-left: 20%;
+    width:auto;
+    height: auto;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .services-title{
+        margin-right: 10%;
+        margin-left: 10%;
+        width:auto;
+        height: auto;
+        
+    }
+  }
+  
+.services-tab{
+    height: auto;
+    width: 100%;
+    max-width: none;
+    display: block;
+    align-items: center;
+    margin-top: 3rem;
+    
+    
+}
+
+.ser{
+    
+    height: auto;
+    margin-bottom:1rem;
+    padding:1rem;
+    align-items: center;
+    border-radius: 1.5rem;
+    border: 2px solid aliceblue;
+    cursor: pointer;
+
+   
+}
+
+.ser {
+    transform: scale(1);
+    transition: transform 0.3s ease-out;
+}
+  
+.ser:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in;
+}
+
+.sevrices-hearder{
+    background: linear-gradient(180deg, #361c30 3.26%, #f2e8e8 120%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (min-width: 769px) and (max-width: 1270px){
+    .services{
+    text-align: center;
+    margin-top: 5rem;
+}
+}

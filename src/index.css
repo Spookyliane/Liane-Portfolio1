@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.967);
+  color: white;
+  font-family: outfit;
+  font-weight: 300;
+}
+
+html {
+  scroll-behavior: smooth;
+}

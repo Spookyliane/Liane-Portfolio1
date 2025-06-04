@@ -1,0 +1,107 @@
+.Profile{
+    border-radius: 50%;
+    margin-top:200px;
+    cursor: pointer;
+}
+
+.Hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center; 
+    gap: 20px;  
+    text-align: center; 
+    
+}
+
+.heroh1{
+text-align: center;
+font-size: 90px;
+font-weight: bold;
+}
+
+.Heroh1 span {
+    background: linear-gradient(180deg, #361c30 0.26%, #f2e8e8 90%);
+    background-clip: text; /* Standard property */
+    -webkit-background-clip: text; /* For Safari & Chrome */
+    -moz-background-clip: text; /* For Firefox (Not always needed) */
+    -ms-background-clip: text; /* For Microsoft Edge (Older versions) */
+    -o-background-clip: text; /* For Opera (Not always needed) */
+    
+    -webkit-text-fill-color: transparent; /* Required to make the text transparent */
+    display: inline-block;
+}
+
+
+.Hero-action{
+    display: flex;
+    align-items: center;
+    gap: 20Px;
+}
+
+.Hero p{
+    font-size: 20px;
+}
+
+.hero-connect{
+   border-radius: 50px; 
+   background: linear-gradient(240deg, #361c30 0.36%, #f2e8e8 100%);
+   padding:14px 45px ;
+   cursor: pointer;
+   transition: 0.4s;
+   text-decoration: none;
+   color: #ffffff;
+}
+
+.hero-resume {
+    padding: 14px 45px;
+    border-radius: 50px;
+    border: 2px solid aliceblue; /* Added "solid" */
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.hero-resume:hover{
+    border: 2px solid #361c30 ;
+    transform: scale(1.05);
+}
+
+.hero-connect:hover{
+    border: 2px solid aliceblue ;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .Profile{
+        border-radius: 50%;
+        margin-top: 70px;
+        cursor: pointer;
+        display: flex;
+        margin-bottom: 70PX;
+    }
+}
+
+
+
+
+/* Large devices (Above 768px, for tablets, laptops, and desktops) */
+@media (min-width: 769px){
+    .Profile{
+        border-radius: 50%;
+        margin-top: 200px;
+        cursor: pointer;
+        display: flex;
+        margin-bottom: 100PX;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1270px){
+    .Profile{
+        border-radius: 50%;
+        margin-top: 200px;
+        cursor: pointer;
+        display: flex;
+        margin-bottom: 100PX;
+    }
+}
