@@ -1,0 +1,109 @@
+.Navbar {
+  background-color: rgba(165, 42, 42, 0);
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 50px;
+  width: 100vw; /* Ensures it spans the full viewport width */
+  max-width: 100%; /* Prevents overflow */
+  box-sizing: border-box; /* Ensures padding doesn’t add extra width */
+}
+
+/* Logo */
+.Nav-logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Nav Menu */
+.Nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Nav Items */
+.Nav-menu li {
+  position: relative;
+  list-style: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Hover effect */
+.Nav-menu li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(141deg, #361c30 0.36%, #f2e8e8 100%);
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+  border-radius: 1px;
+}
+
+.Nav-menu li:hover::after {
+  transform: scaleX(1);
+}
+
+/* Contact Button */
+.Nav-contact {
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 50px;
+  background: linear-gradient(141deg, #361c30 0.36%, #f2e8e8 100%);
+  padding: 10px 20px; /* Add padding for better button appearance */
+  border: none; /* Remove default border */
+  transition: 0.3s;
+}
+
+.Nav-contact:hover {
+  transform: scale(1.05);
+}
+
+/* Mobile Specific Styles */
+@media (max-width: 768px) {
+  /* Stack items vertically */
+  .Navbar {
+    padding: 10px 20px;
+  }
+
+  .Nav-menu {
+    display: none; /* Hide the menu by default */
+    flex-direction: column; /* Stack menu items vertically */
+    align-items: flex-start; /* Align items to the left */
+    gap: 15px; /* Adjust spacing */
+  }
+
+  /* Toggle hamburger icon visibility */
+  .Nav-toggle {
+    display: block; /* Show the hamburger icon on mobile */
+    cursor: pointer;
+  }
+
+  /* Style for hamburger icon */
+  .Nav-toggle div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+  }
+
+  /* Show the menu when active */
+  .Nav-menu.active {
+    display: flex; /* Display the menu when toggled */
+  }
+}
+
+/* Show the menu items after clicking the hamburger icon */
+.Nav-menu.active {
+  display: flex;
+}
