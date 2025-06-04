@@ -1,5 +1,5 @@
 import React from 'react';
-import "./hero.css";
+import "./Hero.css";
 import profile_img from '../../assets/Profile.jpg';
 import resumeFile from '../../assets/lianecv.docx';
 
