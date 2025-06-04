@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Componets/Navbar/Navbar";
 import Hero from "./Componets/hero/Hero";
 import About from "./Componets/About/About";
-import Services from "./Componets/services/services";
+import Services from "./Componets/services/Services";
 import MyWork from "./Componets/myWork/myWork";
 import Contact from "./Componets/Contact/Contact"
 import Footer from "./Componets/Footer/Footer"
